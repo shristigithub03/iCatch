@@ -1,0 +1,104 @@
+
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color: red;
+    overflow:hidden;
+}
+.gameContainer{
+    background-image:url(new\ bg.png) ;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height:100vh;
+}
+
+.hero{
+    background-image: url(newesth.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:130px;
+    height:170px;
+    position: absolute;
+    bottom:140px;
+    left:12px;
+}
+
+.obstacle{
+    width:190px;
+    height:130px;
+    background-image:url(enemyclean.png) ;
+    background-size: cover;
+    position:absolute;
+    bottom:140px;
+    left:44vw;
+    
+
+    
+}
+.animatehero{
+    animation:hero 0.6s linear;
+
+
+}
+.obstacleMega{
+    animation:obstacleMega 5s linear infinite;
+
+}
+.gameOver{
+    position:relative;
+    top:63px;
+    font-size:53px;
+    text-align: center;
+    visibility:hidden;
+    font-family:sans-serif;
+
+
+
+    
+}
+#scoreCont{
+    color:#54212f;
+    font-weight: bold;
+    position:absolute;
+    right: black 45px;
+    top:31px;
+    border:2px solid black;
+    padding:10px;
+    font-family:sans-serif ;
+
+
+
+}
+
+@keyframes hero{
+    0%{
+        bottom:0;
+
+
+    }
+    50%{
+        bottom:422px;
+
+    }
+    100%{
+        bottom:0;
+        
+
+    }
+}
+@keyframes obstacleMega{
+    0%{
+
+        left:100vw;
+    }
+    
+    100%{
+        left:-10vw;
+
+    }
+
+}
